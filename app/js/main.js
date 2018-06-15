@@ -34,7 +34,7 @@ $(window).on('scroll', function () {
 });
 
 
-// owl carousel
+// owl carousel for image
 $(document).ready(function() {
 	
 	var sync1 = $("#sync1");
@@ -113,4 +113,29 @@ $(document).ready(function() {
 		var number = $(this).index();
 		sync1.data('owl.carousel').to(number, 300, true);
 	});
+});
+
+// owl carousel for feedback
+var startItem = $('.item').length - 1;
+
+$(".js-carousel").owlCarousel({
+	dots: true,
+	loop: true,
+	margin: 10,
+	nav: false,
+	startPosition: startItem,
+	responsive: {
+		0: {
+			dotsEach: 5,
+			items: 1
+		},
+		600: {
+			dotsEach: 3,
+			items: 1
+		},
+		1200: {
+			dotsEach: 1,
+			items: 1
+		}
+	}
 });

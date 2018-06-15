@@ -19,14 +19,21 @@
 
 html,
 body {
-  height: 100%;
-  min-height: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  height: 100vh;
   font-family: 'font', sans-serif; }
 
 section {
   width: 100%;
-  height: 100%;
-  background-color: #000000; }
+  height: 100vh; }
+
+a {
+  color: #ffffff !important;
+  text-decoration: none !important; }
+
+.container {
+  max-width: 960px; }
 
 header {
   width: 100%;
@@ -167,35 +174,37 @@ section.why-food-photography {
       font-size: 21px;
       line-height: 1.4; }
 
-section.about .about-title h2 {
-  text-align: center;
-  font-size: 35px;
-  line-height: 1;
-  color: #fff; }
-
-section.about .about-img {
-  display: flex;
-  justify-content: center; }
-  section.about .about-img img {
-    height: 475px; }
-
-section.about .about-topic-wrapper {
-  height: 475px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-  section.about .about-topic-wrapper .about-description {
-    width: 80%; }
-    section.about .about-topic-wrapper .about-description p {
-      font-size: 22px;
-      line-height: 1.2;
-      color: #9c9c9c; }
-      section.about .about-topic-wrapper .about-description p:first-child {
-        margin-top: 50px;
-        margin-bottom: 50px; }
+section.about {
+  height: 80vh; }
+  section.about .about-title h2 {
+    text-align: center;
+    font-size: 35px;
+    line-height: 1;
+    color: #fff; }
+  section.about .about-img {
+    display: flex;
+    justify-content: center; }
+    section.about .about-img img {
+      height: 475px; }
+  section.about .about-topic-wrapper {
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    section.about .about-topic-wrapper .about-description {
+      width: 80%; }
+      section.about .about-topic-wrapper .about-description p {
+        font-size: 22px;
+        line-height: 1.2;
+        color: #9c9c9c; }
+        section.about .about-topic-wrapper .about-description p:first-child {
+          margin-top: 50px;
+          margin-bottom: 50px; }
 
 section.portfolio {
-  position: relative; }
+  height: auto;
+  position: relative;
+  top: 0; }
   section.portfolio .portfolio-top-blur {
     position: absolute;
     top: 0px;
@@ -225,16 +234,22 @@ section.portfolio {
     section.portfolio #sync1 .owl-nav .owl-next svg path {
       font-size: 20px !important;
       stroke-width: 2px !important; }
+  section.portfolio #sync2 .owl-stage-outer .owl-stage.active .owl-item {
+    background-color: red;
+    filter: opacity(30%); }
+  section.portfolio #sync2 .owl-stage-outer .owl-stage.active.current {
+    filter: opacity(0%); }
   section.portfolio #sync2 .item {
     background: #000000;
-    padding: 10px 0px;
-    margin: 5px;
     color: #FFF;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;
-    text-align: center;
-    cursor: pointer; }
+    cursor: pointer;
+    padding: 10px 0px;
+    margin: 5px; }
     section.portfolio #sync2 .item img {
       width: auto;
       height: 100px; }
@@ -258,3 +273,141 @@ section.portfolio {
       left: 10px; }
     section.portfolio #sync1.owl-theme .owl-next {
       right: 10px; }
+
+section.testimonials {
+  display: flex;
+  justify-content: center;
+  padding: 200px 0; }
+  section.testimonials .testimonials-wrapper {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    section.testimonials .testimonials-wrapper .testimonials-title h1 {
+      color: #ffffff;
+      display: flex;
+      justify-content: center; }
+    section.testimonials .testimonials-wrapper .testimonials-feedback ul {
+      list-style-type: none; }
+      section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item {
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-title h4 {
+          font-size: 20px; }
+        section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-description span {
+          font-size: 20px; }
+        section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-icon {
+          padding: 20px 0; }
+          section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-icon i {
+            font-size: 40px;
+            font-weight: 400; }
+        section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-message p {
+          font-size: 20px;
+          line-height: 1.4;
+          text-align: center; }
+        section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .hidden {
+          opacity: 0; }
+      section.testimonials .testimonials-wrapper .testimonials-feedback ul .owl-dots {
+        width: 100%;
+        position: absolute;
+        bottom: -40px;
+        display: flex;
+        justify-content: center; }
+      section.testimonials .testimonials-wrapper .testimonials-feedback ul .owl-dot {
+        background-color: #ffffff;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin: 0 5px;
+        opacity: .3;
+        transition: opacity .3s; }
+        section.testimonials .testimonials-wrapper .testimonials-feedback ul .owl-dot:hover, section.testimonials .testimonials-wrapper .testimonials-feedback ul .owl-dot.active {
+          opacity: 1; }
+
+section.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  section.pricing .pricing-title {
+    margin: 50px; }
+    section.pricing .pricing-title h4 {
+      font-size: 35px;
+      line-height: 1;
+      text-align: center;
+      color: #fff; }
+  section.pricing .pricing-proposals a .pricing-proposal {
+    padding: 30px;
+    border: 2px solid #ffffff; }
+    section.pricing .pricing-proposals a .pricing-proposal:hover {
+      transition: transform .5s;
+      transform: scale(1.03); }
+    section.pricing .pricing-proposals a .pricing-proposal .proposal-title h4 {
+      font-size: 34px;
+      line-height: 1.4;
+      text-align: center; }
+    section.pricing .pricing-proposals a .pricing-proposal .proposal-description {
+      margin: 25px 0; }
+      section.pricing .pricing-proposals a .pricing-proposal .proposal-description p {
+        color: #9c9c9c;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center; }
+    section.pricing .pricing-proposals a .pricing-proposal .proposal-price {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5px; }
+      section.pricing .pricing-proposals a .pricing-proposal .proposal-price span {
+        color: #fff;
+        font-size: 32px;
+        line-height: 1; }
+    section.pricing .pricing-proposals a .pricing-proposal .proposal-currency {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px; }
+      section.pricing .pricing-proposals a .pricing-proposal .proposal-currency span {
+        font-size: 32px;
+        line-height: 1;
+        color: #fff; }
+    section.pricing .pricing-proposals a .pricing-proposal .conditions {
+      display: flex;
+      flex-direction: column; }
+      section.pricing .pricing-proposals a .pricing-proposal .conditions span {
+        color: #d1d1d1;
+        font-size: 21px;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 15px; }
+        section.pricing .pricing-proposals a .pricing-proposal .conditions span:last-child {
+          margin-bottom: 0; }
+
+section.connection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 200px 0 50px; }
+  section.connection .connection-title h4 {
+    text-align: center;
+    font-size: 36px; }
+  section.connection .contact-information {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px; }
+    section.connection .contact-information a {
+      color: #ffffff;
+      width: 33.3%;
+      text-decoration: none; }
+      section.connection .contact-information a:hover {
+        transition: transform 1s;
+        transform: scale(1.3); }
+      section.connection .contact-information a .connection-type {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        section.connection .contact-information a .connection-type .connection-type-icon i {
+          font-size: 40px; }
+        section.connection .contact-information a .connection-type .connection-type-information span {
+          font-size: 22px; }
+  section.connection .connection-copy-right h4 {
+    text-align: center; }
