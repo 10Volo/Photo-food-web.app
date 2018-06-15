@@ -98,7 +98,7 @@
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="15">
-                  <caret line="1" column="79" lean-forward="false" selection-start-line="1" selection-start-column="79" selection-end-line="1" selection-end-column="79" />
+                  <caret line="1" column="75" lean-forward="false" selection-start-line="1" selection-start-column="75" selection-end-line="1" selection-end-column="75" />
                   <folding />
                 </state>
               </provider>
@@ -251,7 +251,7 @@
       <workItem from="1528721733749" duration="13296000" />
       <workItem from="1528811859887" duration="20092000" />
       <workItem from="1529066919447" duration="6071000" />
-      <workItem from="1529077948954" duration="3229000" />
+      <workItem from="1529077948954" duration="3311000" />
     </task>
     <task id="LOCAL-00001" summary="3244324">
       <created>1528734823994</created>
@@ -264,7 +264,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86673000" />
+    <option name="totallyTimeSpent" value="86755000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -674,7 +674,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="79" lean-forward="false" selection-start-line="1" selection-start-column="79" selection-end-line="1" selection-end-column="79" />
+          <caret line="1" column="75" lean-forward="false" selection-start-line="1" selection-start-column="75" selection-end-line="1" selection-end-column="75" />
           <folding />
         </state>
       </provider>
