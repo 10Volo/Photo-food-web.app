@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb8dcad3-83ab-42db-98db-67cc943466fd" name="Default" comment="" />
+    <list default="true" id="fb8dcad3-83ab-42db-98db-67cc943466fd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -86,7 +88,7 @@
             <entry file="file://$PROJECT_DIR$/.gitignor">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
-                  <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+                  <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -182,11 +184,6 @@
               <item name="Photo-food-web.app" type="b2602c69:ProjectViewProjectNode" />
               <item name="Photo-food-web.app" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Photo-food-web.app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Photo-food-web.app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -243,7 +240,7 @@
       <workItem from="1528721733749" duration="13296000" />
       <workItem from="1528811859887" duration="20092000" />
       <workItem from="1529066919447" duration="6071000" />
-      <workItem from="1529077948954" duration="1889000" />
+      <workItem from="1529077948954" duration="2326000" />
     </task>
     <task id="LOCAL-00001" summary="3244324">
       <created>1528734823994</created>
@@ -256,7 +253,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85333000" />
+    <option name="totallyTimeSpent" value="85770000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -662,7 +659,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignor">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
           <folding />
         </state>
       </provider>

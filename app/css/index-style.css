@@ -234,11 +234,6 @@ section.portfolio {
     section.portfolio #sync1 .owl-nav .owl-next svg path {
       font-size: 20px !important;
       stroke-width: 2px !important; }
-  section.portfolio #sync2 .owl-stage-outer .owl-stage.active .owl-item {
-    background-color: red;
-    filter: opacity(30%); }
-  section.portfolio #sync2 .owl-stage-outer .owl-stage.active.current {
-    filter: opacity(0%); }
   section.portfolio #sync2 .item {
     background: #000000;
     color: #FFF;
