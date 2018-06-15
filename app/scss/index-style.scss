@@ -312,36 +312,6 @@ section.portfolio {
 	}
 
 	#sync2 {
-
-		.owl-stage-outer {
-			.owl-stage {
-				&.active {
-					.owl-item {
-						background-color: red;
-						filter:opacity(30%);
-
-
-					}
-
-					&.current {
-
-
-						filter:opacity(0%);
-
-					}
-					}
-
-			}
-		}
-
-
-
-
-
-
-
-
-
 		.item {
 			background: #000000;
 			color: #FFF;
