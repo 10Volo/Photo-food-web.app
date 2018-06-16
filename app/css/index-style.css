@@ -5,6 +5,10 @@
   font-size: 22px;
   text-decoration: none;
   padding: 10px 25px; }
+  @media (max-width: 800px) {
+    .btn-main {
+      border: 2px solid #c9c9c9;
+      font-size: 18px; } }
 
 @font-face {
   font-family: 'font';
@@ -27,6 +31,10 @@ body {
 section {
   width: 100%;
   height: 100vh; }
+  @media (max-width: 800px) {
+    section {
+      height: auto;
+      padding: 70px 0; } }
 
 a {
   color: #ffffff !important;
@@ -62,6 +70,10 @@ header {
             transform: translateX(0); } }
         header #header-scroll .bottomMenu .menu-nav .header-logo img {
           width: 180px; }
+          @media (max-width: 800px) {
+            header #header-scroll .bottomMenu .menu-nav .header-logo img {
+              width: 100px;
+              margin-top: 10px; } }
         header #header-scroll .bottomMenu .menu-nav .menu {
           background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
           display: flex;
@@ -98,6 +110,9 @@ header {
                 transition: all 0.2s ease; }
                 header #header-scroll .bottomMenu .menu-nav .menu ul li a:hover {
                   color: #85c2ff; }
+                @media (max-width: 800px) {
+                  header #header-scroll .bottomMenu .menu-nav .menu ul li a {
+                    font-size: 18px; } }
                 header #header-scroll .bottomMenu .menu-nav .menu ul li a a {
                   text-decoration: none;
                   color: #fff; }
@@ -138,11 +153,23 @@ section.introduce {
     section.introduce .introduce-gif img {
       width: 70%;
       height: 70%; }
+      @media (max-width: 800px) {
+        section.introduce .introduce-gif img {
+          width: 35%; } }
+  @media (max-width: 800px) {
+    section.introduce .introduce-title {
+      margin-bottom: 10px; } }
   section.introduce .introduce-title h3 {
     color: #ffffff;
     width: 230px;
     text-align: center;
     font-size: 25px; }
+    @media (max-width: 800px) {
+      section.introduce .introduce-title h3 {
+        font-size: 20px; } }
+  @media (max-width: 800px) {
+    section.introduce .introduce-button a {
+      font-size: 18px; } }
 
 section.why-food-photography {
   width: 100%;
@@ -157,22 +184,38 @@ section.why-food-photography {
     flex-direction: column;
     align-items: center;
     padding: 30px 0; }
+    @media (max-width: 800px) {
+      section.why-food-photography .why-topics {
+        height: auto; } }
     section.why-food-photography .why-topics .why-topic-img img {
       margin-bottom: 30px;
       width: 400px; }
+      @media (max-width: 800px) {
+        section.why-food-photography .why-topics .why-topic-img img {
+          width: 300px;
+          margin-bottom: 20px; } }
     section.why-food-photography .why-topics .why-topic-title {
       margin-bottom: 30px; }
+      @media (max-width: 800px) {
+        section.why-food-photography .why-topics .why-topic-title {
+          margin-bottom: 20px; } }
       section.why-food-photography .why-topics .why-topic-title h2 {
         color: #ffffff;
         width: 200px;
         text-align: center;
         font-size: 35px; }
+        @media (max-width: 800px) {
+          section.why-food-photography .why-topics .why-topic-title h2 {
+            font-size: 30px; } }
     section.why-food-photography .why-topics .why-topic-description p {
       color: #c9c9c9;
       width: 380px;
       text-align: center;
       font-size: 21px;
       line-height: 1.4; }
+      @media (max-width: 800px) {
+        section.why-food-photography .why-topics .why-topic-description p {
+          font-size: 18px; } }
 
 section.about {
   height: 80vh; }
@@ -181,18 +224,31 @@ section.about {
     font-size: 35px;
     line-height: 1;
     color: #fff; }
+    @media (max-width: 800px) {
+      section.about .about-title h2 {
+        font-size: 30px; } }
   section.about .about-img {
     display: flex;
     justify-content: center; }
     section.about .about-img img {
       height: 475px; }
+      @media (max-width: 800px) {
+        section.about .about-img img {
+          height: 280px;
+          margin-top: 30px; } }
   section.about .about-topic-wrapper {
     height: 475px;
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
+    @media (max-width: 800px) {
+      section.about .about-topic-wrapper {
+        height: auto; } }
     section.about .about-topic-wrapper .about-description {
       width: 80%; }
+      @media (max-width: 800px) {
+        section.about .about-topic-wrapper .about-description {
+          margin-bottom: 25px; } }
       section.about .about-topic-wrapper .about-description p {
         font-size: 22px;
         line-height: 1.2;
@@ -200,6 +256,12 @@ section.about {
         section.about .about-topic-wrapper .about-description p:first-child {
           margin-top: 50px;
           margin-bottom: 50px; }
+          @media (max-width: 800px) {
+            section.about .about-topic-wrapper .about-description p:first-child {
+              margin: 30px 0; } }
+        @media (max-width: 800px) {
+          section.about .about-topic-wrapper .about-description p {
+            font-size: 18px; } }
 
 section.portfolio {
   height: auto;
@@ -212,6 +274,9 @@ section.portfolio {
     height: 200px;
     background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
     z-index: 2; }
+    @media (max-width: 800px) {
+      section.portfolio .portfolio-top-blur {
+        top: 25px; } }
   section.portfolio #sync1 .item {
     background: #000000;
     margin: 5px;
@@ -278,10 +343,18 @@ section.testimonials {
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
-    section.testimonials .testimonials-wrapper .testimonials-title h1 {
-      color: #ffffff;
-      display: flex;
-      justify-content: center; }
+    section.testimonials .testimonials-wrapper .testimonials-title {
+      margin-bottom: 30px; }
+      @media (max-width: 800px) {
+        section.testimonials .testimonials-wrapper .testimonials-title {
+          margin-bottom: 50px; } }
+      section.testimonials .testimonials-wrapper .testimonials-title h1 {
+        color: #ffffff;
+        display: flex;
+        justify-content: center; }
+        @media (max-width: 800px) {
+          section.testimonials .testimonials-wrapper .testimonials-title h1 {
+            font-size: 30px; } }
     section.testimonials .testimonials-wrapper .testimonials-feedback ul {
       list-style-type: none; }
       section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item {
@@ -291,17 +364,30 @@ section.testimonials {
         align-items: center; }
         section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-title h4 {
           font-size: 20px; }
+          @media (max-width: 800px) {
+            section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-title h4 {
+              margin: 0; } }
         section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-description span {
           font-size: 20px; }
         section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-icon {
           padding: 20px 0; }
+          @media (max-width: 800px) {
+            section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-icon {
+              padding: 10px 0; } }
           section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-icon i {
             font-size: 40px;
             font-weight: 400; }
+            @media (max-width: 800px) {
+              section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-icon i {
+                font-size: 30px; } }
         section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-message p {
           font-size: 20px;
           line-height: 1.4;
           text-align: center; }
+          @media (max-width: 800px) {
+            section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-message p {
+              font-size: 18px;
+              line-height: 1.3; } }
         section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .hidden {
           opacity: 0; }
       section.testimonials .testimonials-wrapper .testimonials-feedback ul .owl-dots {
@@ -326,15 +412,25 @@ section.pricing {
   flex-direction: column;
   align-items: center; }
   section.pricing .pricing-title {
-    margin: 50px; }
+    margin: 50px 0; }
+    @media (max-width: 800px) {
+      section.pricing .pricing-title {
+        font-size: 30px;
+        margin: 25px 0; } }
     section.pricing .pricing-title h4 {
       font-size: 35px;
       line-height: 1;
       text-align: center;
       color: #fff; }
+      @media (max-width: 800px) {
+        section.pricing .pricing-title h4 {
+          font-size: 30px; } }
   section.pricing .pricing-proposals a .pricing-proposal {
     padding: 30px;
     border: 2px solid #ffffff; }
+    @media (max-width: 800px) {
+      section.pricing .pricing-proposals a .pricing-proposal {
+        padding: 20px; } }
     section.pricing .pricing-proposals a .pricing-proposal:hover {
       transition: transform .5s;
       transform: scale(1.03); }
@@ -342,13 +438,22 @@ section.pricing {
       font-size: 34px;
       line-height: 1.4;
       text-align: center; }
+      @media (max-width: 800px) {
+        section.pricing .pricing-proposals a .pricing-proposal .proposal-title h4 {
+          font-size: 30px; } }
     section.pricing .pricing-proposals a .pricing-proposal .proposal-description {
       margin: 25px 0; }
+      @media (max-width: 800px) {
+        section.pricing .pricing-proposals a .pricing-proposal .proposal-description {
+          margin: 15px 0; } }
       section.pricing .pricing-proposals a .pricing-proposal .proposal-description p {
         color: #9c9c9c;
         font-size: 20px;
         line-height: 1.2;
         text-align: center; }
+        @media (max-width: 800px) {
+          section.pricing .pricing-proposals a .pricing-proposal .proposal-description p {
+            font-size: 18px; } }
     section.pricing .pricing-proposals a .pricing-proposal .proposal-price {
       display: flex;
       justify-content: center;
@@ -357,14 +462,23 @@ section.pricing {
         color: #fff;
         font-size: 32px;
         line-height: 1; }
+        @media (max-width: 800px) {
+          section.pricing .pricing-proposals a .pricing-proposal .proposal-price span {
+            font-size: 30px; } }
     section.pricing .pricing-proposals a .pricing-proposal .proposal-currency {
       display: flex;
       justify-content: center;
       margin-bottom: 40px; }
+      @media (max-width: 800px) {
+        section.pricing .pricing-proposals a .pricing-proposal .proposal-currency {
+          margin-bottom: 25px; } }
       section.pricing .pricing-proposals a .pricing-proposal .proposal-currency span {
         font-size: 32px;
         line-height: 1;
         color: #fff; }
+        @media (max-width: 800px) {
+          section.pricing .pricing-proposals a .pricing-proposal .proposal-currency span {
+            font-size: 30px; } }
     section.pricing .pricing-proposals a .pricing-proposal .conditions {
       display: flex;
       flex-direction: column; }
@@ -372,23 +486,35 @@ section.pricing {
         color: #d1d1d1;
         font-size: 21px;
         line-height: 1.2;
-        text-align: center;
-        margin-bottom: 15px; }
+        text-align: center; }
         section.pricing .pricing-proposals a .pricing-proposal .conditions span:last-child {
           margin-bottom: 0; }
+        @media (max-width: 800px) {
+          section.pricing .pricing-proposals a .pricing-proposal .conditions span {
+            font-size: 18px;
+            margin-bottom: 10px; } }
 
 section.connection {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 200px 0 50px; }
+  @media (max-width: 800px) {
+    section.connection {
+      padding: 150px 0 20px; } }
   section.connection .connection-title h4 {
     text-align: center;
     font-size: 36px; }
+    @media (max-width: 800px) {
+      section.connection .connection-title h4 {
+        font-size: 30px; } }
   section.connection .contact-information {
     display: flex;
     justify-content: space-around;
     margin: 100px; }
+    @media (max-width: 800px) {
+      section.connection .contact-information {
+        margin: 100px 50px; } }
     section.connection .contact-information a {
       color: #ffffff;
       width: 33.3%;
@@ -404,5 +530,11 @@ section.connection {
           font-size: 40px; }
         section.connection .contact-information a .connection-type .connection-type-information span {
           font-size: 22px; }
+          @media (max-width: 800px) {
+            section.connection .contact-information a .connection-type .connection-type-information span {
+              font-size: 18px; } }
   section.connection .connection-copy-right h4 {
     text-align: center; }
+    @media (max-width: 800px) {
+      section.connection .connection-copy-right h4 {
+        font-size: 20px; } }
