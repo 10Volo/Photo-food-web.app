@@ -9,7 +9,7 @@
     .btn-main {
       border: 2px solid #c9c9c9;
       font-size: 18px !important; } }
-  @media (max-width: 800px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     .btn-main {
       font-size: 16px !important;
       border: 1px solid #c9c9c9; } }
@@ -68,8 +68,8 @@ header {
         top: 0; }
         @media (max-width: 767px) {
           header #header-scroll .bottomMenu .menu-nav.show .menu {
-            -webkit-transform: translateX(450px);
-            transform: translateX(450px); } }
+            -webkit-transform: translateX(600px);
+            transform: translateX(600px); } }
         header #header-scroll .bottomMenu .menu-nav .header-logo img {
           width: 180px; }
           @media (max-width: 800px) {
@@ -95,8 +95,10 @@ header {
           @media (max-width: 767px) {
             header #header-scroll .bottomMenu .menu-nav .menu {
               position: fixed;
-              width: 250px;
-              height: 250px;
+              top: 0;
+              left: -600px;
+              width: 310px;
+              height: 310px;
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -110,9 +112,7 @@ header {
               -ms-flex-align: start;
               align-items: flex-start;
               z-index: 100;
-              background: linear-gradient(to bottom right, black 150px, rgba(0, 0, 0, 0) 2rem);
-              top: 0;
-              left: -460px;
+              background: linear-gradient(to bottom right, black 210px, rgba(0, 0, 0, 0) 0);
               -webkit-transform: translateX(100%);
               transform: translateX(100%);
               -webkit-box-orient: vertical;
@@ -145,7 +145,7 @@ header {
               margin: 0 10px; }
               header #header-scroll .bottomMenu .menu-nav .menu ul li a {
                 padding: 10px 0;
-                color: #fff;
+                color: #ffffff;
                 text-decoration: none;
                 font-size: 20px;
                 -webkit-transition: all 0.2s ease;
@@ -163,7 +163,7 @@ header {
                     padding: 0; } }
                 header #header-scroll .bottomMenu .menu-nav .menu ul li a a {
                   text-decoration: none;
-                  color: #fff; }
+                  color: #ffffff; }
                 header #header-scroll .bottomMenu .menu-nav .menu ul li a.active {
                   border-bottom: 1px solid #ffffff; }
         header #header-scroll .bottomMenu .menu-nav .toggle {
@@ -182,7 +182,7 @@ header {
           justify-content: space-between;
           width: 35px;
           height: 35px;
-          background-color: rgba(255, 255, 255, 0);
+          background-color: black;
           border: 1px solid #ffffff;
           border-radius: 6px;
           padding: 7px; }
@@ -286,6 +286,10 @@ section.why-food-photography {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding: 30px 0; }
     @media (max-width: 800px) {
       section.why-food-photography .why-topics {
@@ -297,9 +301,9 @@ section.why-food-photography {
         section.why-food-photography .why-topics .why-topic-img img {
           width: 300px;
           margin-bottom: 20px; } }
-  @media (max-width: 800px) and (max-width: 414px) {
-    section.why-food-photography .why-topics .why-topic-img img {
-      width: 260px; } }
+      @media (max-width: 414px) {
+        section.why-food-photography .why-topics .why-topic-img img {
+          width: 260px; } }
     section.why-food-photography .why-topics .why-topic-title {
       margin-bottom: 30px; }
       @media (max-width: 800px) {
@@ -313,9 +317,9 @@ section.why-food-photography {
         @media (max-width: 800px) {
           section.why-food-photography .why-topics .why-topic-title h2 {
             font-size: 30px; } }
-  @media (max-width: 800px) and (max-width: 320px) {
-    section.why-food-photography .why-topics .why-topic-title h2 {
-      font-size: 24px; } }
+        @media (max-width: 320px) {
+          section.why-food-photography .why-topics .why-topic-title h2 {
+            font-size: 24px; } }
     section.why-food-photography .why-topics .why-topic-description p {
       color: #c9c9c9;
       width: 380px;
@@ -325,12 +329,12 @@ section.why-food-photography {
       @media (max-width: 800px) {
         section.why-food-photography .why-topics .why-topic-description p {
           font-size: 18px; } }
-  @media (max-width: 800px) and (max-width: 375px) {
-    section.why-food-photography .why-topics .why-topic-description p {
-      width: 300px; } }
-  @media (max-width: 800px) and (max-width: 375px) and (max-width: 320px) {
-    section.why-food-photography .why-topics .why-topic-description p {
-      font-size: 16px; } }
+      @media (max-width: 375px) {
+        section.why-food-photography .why-topics .why-topic-description p {
+          width: 300px; } }
+      @media (max-width: 320px) {
+        section.why-food-photography .why-topics .why-topic-description p {
+          font-size: 16px; } }
 
 section.about {
   height: 80vh; }
@@ -342,13 +346,13 @@ section.about {
     text-align: center;
     font-size: 35px;
     line-height: 1;
-    color: #fff; }
+    color: #ffffff; }
     @media (max-width: 800px) {
       section.about .about-title h2 {
         font-size: 30px; } }
-  @media (max-width: 800px) and (max-width: 320px) {
-    section.about .about-title h2 {
-      font-size: 24px; } }
+    @media (max-width: 320px) {
+      section.about .about-title h2 {
+        font-size: 24px; } }
   section.about .about-img {
     display: -webkit-box;
     display: -webkit-flex;
@@ -364,9 +368,9 @@ section.about {
         section.about .about-img img {
           height: 280px;
           margin-top: 30px; } }
-  @media (max-width: 800px) and (max-width: 767px) {
-    section.about .about-img img {
-      height: 250px; } }
+      @media (max-width: 767px) {
+        section.about .about-img img {
+          height: 250px; } }
   section.about .about-topic-wrapper {
     height: 475px;
     display: -webkit-box;
@@ -428,9 +432,12 @@ section.portfolio {
   height: auto;
   position: relative;
   top: 0; }
+  @media (max-width: 320px) {
+    section.portfolio {
+      padding-top: 80px; } }
   section.portfolio .portfolio-top-blur {
     position: absolute;
-    top: 0px;
+    top: 0;
     width: 100%;
     height: 200px;
     background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
@@ -439,10 +446,13 @@ section.portfolio {
     @media (max-width: 800px) {
       section.portfolio .portfolio-top-blur {
         top: 25px; } }
+    @media (max-width: 320px) {
+      section.portfolio .portfolio-top-blur {
+        height: 50px; } }
   section.portfolio #sync1 .item {
     background: #000000;
     margin: 5px;
-    color: #FFF;
+    color: #ffffff;
     border-radius: 3px;
     text-align: center; }
   @media (max-width: 414px) {
@@ -464,7 +474,7 @@ section.portfolio {
       stroke-width: 2px !important; }
   section.portfolio #sync2 .item {
     background: #000000;
-    color: #FFF;
+    color: #ffffff;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -493,7 +503,7 @@ section.portfolio {
       -webkit-transition: all .3s ease;
       transition: all .3s ease; }
       section.portfolio .owl-theme .owl-nav [class*='owl-'].disabled:hover {
-        background-color: #D6D6D6; }
+        background-color: #d6d6d6; }
   section.portfolio #sync1.owl-theme {
     position: relative; }
     section.portfolio #sync1.owl-theme .owl-next, section.portfolio #sync1.owl-theme .owl-prev {
@@ -537,9 +547,9 @@ section.testimonials {
     @media (max-width: 414px) {
       section.testimonials .testimonials-wrapper {
         width: 390px; } }
-  @media (max-width: 414px) and (max-width: 375px) {
-    section.testimonials .testimonials-wrapper {
-      width: 300px; } }
+    @media (max-width: 375px) {
+      section.testimonials .testimonials-wrapper {
+        width: 300px; } }
     section.testimonials .testimonials-wrapper .testimonials-title {
       margin-bottom: 30px; }
       @media (max-width: 800px) {
@@ -558,9 +568,9 @@ section.testimonials {
         @media (max-width: 800px) {
           section.testimonials .testimonials-wrapper .testimonials-title h1 {
             font-size: 30px; } }
-  @media (max-width: 800px) and (max-width: 320px) {
-    section.testimonials .testimonials-wrapper .testimonials-title h1 {
-      font-size: 24px; } }
+        @media (max-width: 320px) {
+          section.testimonials .testimonials-wrapper .testimonials-title h1 {
+            font-size: 24px; } }
     section.testimonials .testimonials-wrapper .testimonials-feedback ul {
       list-style-type: none; }
       section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item {
@@ -586,9 +596,9 @@ section.testimonials {
           @media (max-width: 800px) {
             section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-title h4 {
               margin: 0; } }
-  @media (max-width: 800px) and (max-width: 320px) {
-    section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-title h4 {
-      font-size: 20px; } }
+          @media (max-width: 320px) {
+            section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-title h4 {
+              font-size: 20px; } }
         section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-description span {
           font-size: 20px; }
           @media (max-width: 320px) {
@@ -613,9 +623,9 @@ section.testimonials {
             section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-message p {
               font-size: 18px;
               line-height: 1.3; } }
-  @media (max-width: 800px) and (max-width: 320px) {
-    section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-message p {
-      font-size: 16px; } }
+          @media (max-width: 320px) {
+            section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .testimonials-feedback-message p {
+              font-size: 16px; } }
         section.testimonials .testimonials-wrapper .testimonials-feedback ul li.item .hidden {
           opacity: 0; }
       section.testimonials .testimonials-wrapper .testimonials-feedback ul .owl-item {
@@ -681,13 +691,13 @@ section.pricing {
       font-size: 35px;
       line-height: 1;
       text-align: center;
-      color: #fff; }
+      color: #ffffff; }
       @media (max-width: 800px) {
         section.pricing .pricing-title h4 {
           font-size: 30px; } }
-  @media (max-width: 800px) and (max-width: 800px) {
-    section.pricing .pricing-title h4 {
-      font-size: 24px; } }
+      @media (max-width: 767px) {
+        section.pricing .pricing-title h4 {
+          font-size: 24px; } }
   section.pricing .pricing-proposals a .pricing-proposal {
     padding: 30px;
     border: 2px solid #ffffff; }
@@ -709,9 +719,9 @@ section.pricing {
       @media (max-width: 800px) {
         section.pricing .pricing-proposals a .pricing-proposal .proposal-title h4 {
           font-size: 30px; } }
-  @media (max-width: 800px) and (max-width: 800px) {
-    section.pricing .pricing-proposals a .pricing-proposal .proposal-title h4 {
-      font-size: 24px; } }
+      @media (max-width: 767px) {
+        section.pricing .pricing-proposals a .pricing-proposal .proposal-title h4 {
+          font-size: 24px; } }
     section.pricing .pricing-proposals a .pricing-proposal .proposal-description {
       margin: 25px 0; }
       @media (max-width: 800px) {
@@ -725,9 +735,9 @@ section.pricing {
         @media (max-width: 800px) {
           section.pricing .pricing-proposals a .pricing-proposal .proposal-description p {
             font-size: 18px; } }
-  @media (max-width: 800px) and (max-width: 800px) {
-    section.pricing .pricing-proposals a .pricing-proposal .proposal-description p {
-      font-size: 16px; } }
+        @media (max-width: 767px) {
+          section.pricing .pricing-proposals a .pricing-proposal .proposal-description p {
+            font-size: 16px; } }
     section.pricing .pricing-proposals a .pricing-proposal .proposal-price {
       display: -webkit-box;
       display: -webkit-flex;
@@ -739,15 +749,15 @@ section.pricing {
       justify-content: center;
       margin-bottom: 5px; }
       section.pricing .pricing-proposals a .pricing-proposal .proposal-price span {
-        color: #fff;
+        color: #ffffff;
         font-size: 32px;
         line-height: 1; }
         @media (max-width: 800px) {
           section.pricing .pricing-proposals a .pricing-proposal .proposal-price span {
             font-size: 30px; } }
-  @media (max-width: 800px) and (max-width: 800px) {
-    section.pricing .pricing-proposals a .pricing-proposal .proposal-price span {
-      font-size: 24px; } }
+        @media (max-width: 767px) {
+          section.pricing .pricing-proposals a .pricing-proposal .proposal-price span {
+            font-size: 24px; } }
     section.pricing .pricing-proposals a .pricing-proposal .proposal-currency {
       display: -webkit-box;
       display: -webkit-flex;
@@ -768,9 +778,9 @@ section.pricing {
         @media (max-width: 800px) {
           section.pricing .pricing-proposals a .pricing-proposal .proposal-currency span {
             font-size: 30px; } }
-  @media (max-width: 800px) and (max-width: 800px) {
-    section.pricing .pricing-proposals a .pricing-proposal .proposal-currency span {
-      font-size: 24px; } }
+        @media (max-width: 767px) {
+          section.pricing .pricing-proposals a .pricing-proposal .proposal-currency span {
+            font-size: 24px; } }
     section.pricing .pricing-proposals a .pricing-proposal .conditions {
       display: -webkit-box;
       display: -webkit-flex;
@@ -792,9 +802,9 @@ section.pricing {
           section.pricing .pricing-proposals a .pricing-proposal .conditions span {
             font-size: 18px;
             margin-bottom: 10px; } }
-  @media (max-width: 800px) and (max-width: 800px) {
-    section.pricing .pricing-proposals a .pricing-proposal .conditions span {
-      font-size: 16px; } }
+        @media (max-width: 767px) {
+          section.pricing .pricing-proposals a .pricing-proposal .conditions span {
+            font-size: 16px; } }
 
 section.connection {
   display: -webkit-box;
@@ -820,12 +830,12 @@ section.connection {
     @media (max-width: 800px) {
       section.connection .connection-title h4 {
         font-size: 30px; } }
-  @media (max-width: 800px) and (max-width: 414px) {
-    section.connection .connection-title h4 {
-      margin-bottom: 40px; } }
-  @media (max-width: 800px) and (max-width: 414px) and (max-width: 320px) {
-    section.connection .connection-title h4 {
-      font-size: 24px; } }
+    @media (max-width: 414px) {
+      section.connection .connection-title h4 {
+        margin-bottom: 40px; } }
+    @media (max-width: 320px) {
+      section.connection .connection-title h4 {
+        font-size: 24px; } }
   section.connection .contact-information {
     display: -webkit-box;
     display: -webkit-flex;
@@ -889,17 +899,17 @@ section.connection {
           @media (max-width: 800px) {
             section.connection .contact-information a .connection-type .connection-type-information span {
               font-size: 18px; } }
-  @media (max-width: 800px) and (max-width: 414px) {
-    section.connection .contact-information a .connection-type .connection-type-information span {
-      font-size: 20px; } }
-  @media (max-width: 800px) and (max-width: 414px) and (max-width: 320px) {
-    section.connection .contact-information a .connection-type .connection-type-information span {
-      font-size: 16px; } }
+          @media (max-width: 414px) {
+            section.connection .contact-information a .connection-type .connection-type-information span {
+              font-size: 20px; } }
+          @media (max-width: 320px) {
+            section.connection .contact-information a .connection-type .connection-type-information span {
+              font-size: 16px; } }
   section.connection .connection-copy-right h4 {
     text-align: center; }
     @media (max-width: 800px) {
       section.connection .connection-copy-right h4 {
         font-size: 20px; } }
-  @media (max-width: 800px) and (max-width: 414px) {
-    section.connection .connection-copy-right h4 {
-      font-size: 12px; } }
+    @media (max-width: 414px) {
+      section.connection .connection-copy-right h4 {
+        font-size: 12px; } }

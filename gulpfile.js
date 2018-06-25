@@ -28,7 +28,6 @@ gulp.task('sass', function() {
 		.pipe(browserSync.stream());
 });
 
-<<<<<<< HEAD
 gulp.task('default', ['serve']);
 
 // PostCss
@@ -42,6 +41,4 @@ gulp.task('css', function () {
 		.pipe( sourcemaps.write('.') )
 		.pipe( gulp.dest('build/') );
 });
-=======
 gulp.task('default', ['serve']);
->>>>>>> 682f09ef2fc9933444b44bee48dc3ba4d313ab9f

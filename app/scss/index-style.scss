@@ -66,10 +66,6 @@ header {
 		left: 0;
 		top: 0;
 		width: 100%;
-		-ms-transition: all 0.3s ease-out;
-		-moz-transition: all 0.3s ease-out;
-		-webkit-transition: all 0.3s ease-out;
-		-o-transition: all 0.3s ease-out;
 		transition: all 0.3s ease-out;
 		.bottomMenu {
 			display: none;
@@ -80,7 +76,7 @@ header {
 				&.show {
 					@media (max-width: 767px) {
 						.menu {
-							transform: translateX(450px);
+							transform: translateX(600px);
 						}
 					}
 				}
@@ -101,15 +97,15 @@ header {
 					padding: 0 25px;
 					@media (max-width: 767px) {
 						position: fixed;
-						width: 250px;
-						height: 250px;
+						top: 0;
+						left: -600px;
+						width: 310px;
+						height: 310px;
 						display: flex;
 						justify-content: flex-start;
 						align-items: flex-start;
 						z-index: 100;
-						background: linear-gradient(to bottom right, rgba(0, 0, 0, 1) 150px, rgba(0, 0, 0, 0.0) 2rem);
-						top: 0;
-						left: -460px;
+						background: linear-gradient(to bottom right, rgba(0, 0, 0, 1) 210px, rgba(0, 0, 0, 0.0) 0);
 						transform: translateX(100%);
 						flex-direction: column;
 						transition: transform 0.2s ease-in-out;
@@ -128,7 +124,7 @@ header {
 							margin: 0 10px;
 							a {
 								padding: 10px 0;
-								color: #fff;
+								color: #ffffff;
 								text-decoration: none;
 								font-size: 20px;
 								transition: all 0.2s ease;
@@ -146,7 +142,7 @@ header {
 								}
 								a {
 									text-decoration: none;
-									color: #fff;
+									color: #ffffff;
 								}
 								&.active {
 									border-bottom: 1px solid #ffffff;
@@ -165,7 +161,7 @@ header {
 					justify-content: space-between;
 					width: 35px;
 					height: 35px;
-					background-color: rgba(255, 255, 255, 0);
+					background-color: rgba(0, 0, 0, 1);
 					border: 1px solid #ffffff;
 					border-radius: 6px;
 					padding: 7px;
@@ -250,6 +246,7 @@ section.why-food-photography {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 		padding: 30px 0;
 		@media (max-width: 800px) {
 			height: auto;
@@ -261,9 +258,9 @@ section.why-food-photography {
 				@media (max-width: 800px) {
 					width: 300px;
 					margin-bottom: 20px;
-					@media (max-width: 414px) {
-						width: 260px;
-					}
+				}
+				@media (max-width: 414px) {
+					width: 260px;
 				}
 			}
 		}
@@ -279,9 +276,9 @@ section.why-food-photography {
 				font-size: $fnt-sz-title-lg;
 				@media (max-width: 800px) {
 					font-size: $fnt-sz-title-md;
-					@media (max-width: 320px) {
-						font-size: $fnt-sz-title-sx;
-					}
+				}
+				@media (max-width: 320px) {
+					font-size: $fnt-sz-title-sx;
 				}
 			}
 		}
@@ -294,12 +291,12 @@ section.why-food-photography {
 				line-height: 1.4;
 				@media (max-width: 800px) {
 					font-size: $fnt-sz-p-md;
-					@media (max-width: 375px) {
-						width: 300px;
-						@media (max-width: 320px) {
-							font-size: $fnt-sz-p-xs;
-						}
-					}
+				}
+				@media (max-width: 375px) {
+					width: 300px;
+				}
+				@media (max-width: 320px) {
+					font-size: $fnt-sz-p-xs;
 				}
 			}
 		}
@@ -317,12 +314,12 @@ section.about {
 			text-align: center;
 			font-size: $fnt-sz-title-lg;
 			line-height: 1;
-			color: #fff;
+			color: #ffffff;
 			@media (max-width: 800px) {
 				font-size: $fnt-sz-title-md;
-				@media (max-width: 320px) {
-					font-size: $fnt-sz-title-sx;
-				}
+			}
+			@media (max-width: 320px) {
+				font-size: $fnt-sz-title-sx;
 			}
 		}
 	}
@@ -334,9 +331,9 @@ section.about {
 			@media (max-width: 800px) {
 				height: 280px;
 				margin-top: 30px;
-				@media (max-width: 767px) {
-					height: 250px;
-				}
+			}
+			@media (max-width: 767px) {
+				height: 250px;
 			}
 		}
 	}
@@ -387,9 +384,12 @@ section.portfolio {
 	height: auto;
 	position: relative;
 	top: 0;
+	@media (max-width: 320px) {
+		padding-top: 80px;
+	}
 	.portfolio-top-blur {
 		position: absolute;
-		top: 0px;
+		top: 0;
 		width: 100%;
 		height: 200px;
 		background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.0));
@@ -397,12 +397,15 @@ section.portfolio {
 		@media (max-width: 800px) {
 			top: 25px;
 		}
+		@media (max-width: 320px) {
+			height: 50px;
+		}
 	}
 	#sync1 {
 		.item {
 			background: #000000;
 			margin: 5px;
-			color: #FFF;
+			color: #ffffff;
 			-webkit-border-radius: 3px;
 			-moz-border-radius: 3px;
 			border-radius: 3px;
@@ -416,7 +419,6 @@ section.portfolio {
 				width: 30px !important;
 				height: 110px !important;
 				background-color: rgba(0, 0, 0, 0.0);
-
 				svg {
 					path {
 						font-size: 20px !important;
@@ -428,7 +430,6 @@ section.portfolio {
 				width: 30px !important;
 				height: 110px !important;
 				background-color: rgba(0, 0, 0, 0.0);
-
 				svg {
 					path {
 						font-size: 20px !important;
@@ -438,11 +439,10 @@ section.portfolio {
 			}
 		}
 	}
-
 	#sync2 {
 		.item {
 			background: #000000;
-			color: #FFF;
+			color: #ffffff;
 			display: flex;
 			justify-content: center;
 			border-radius: 3px;
@@ -469,7 +469,7 @@ section.portfolio {
 			[class*='owl-'] {
 				transition: all .3s ease;
 				&.disabled:hover {
-					background-color: #D6D6D6;
+					background-color: #d6d6d6;
 				}
 			}
 		}
@@ -507,9 +507,9 @@ section.testimonials {
 		justify-content: space-around;
 		@media (max-width: 414px) {
 			width: 390px;
-			@media (max-width: 375px) {
-				width: 300px;
-			}
+		}
+		@media (max-width: 375px) {
+			width: 300px;
 		}
 		.testimonials-title {
 			margin-bottom: 30px;
@@ -522,9 +522,9 @@ section.testimonials {
 				justify-content: center;
 				@media (max-width: 800px) {
 					font-size: $fnt-sz-title-md;
-					@media (max-width: 320px) {
-						font-size: $fnt-sz-title-sx;
-					}
+				}
+				@media (max-width: 320px) {
+					font-size: $fnt-sz-title-sx;
 				}
 			}
 		}
@@ -544,11 +544,10 @@ section.testimonials {
 							font-size: 20px;
 							@media (max-width: 800px) {
 								margin: 0;
-								@media (max-width: 320px) {
-									font-size: 20px;
-								}
 							}
-						}
+							@media (max-width: 320px) {
+								font-size: 20px;
+							}						}
 					}
 					.testimonials-feedback-description {
 						span {
@@ -579,9 +578,9 @@ section.testimonials {
 							@media (max-width: 800px) {
 								font-size: $fnt-sz-p-md;
 								line-height: 1.3;
-								@media (max-width: 320px) {
-									font-size: $fnt-sz-p-xs;
-								}
+							}
+							@media (max-width: 320px) {
+								font-size: $fnt-sz-p-xs;
 							}
 						}
 					}
@@ -644,12 +643,12 @@ section.pricing {
 			font-size: $fnt-sz-title-lg;
 			line-height: 1;
 			text-align: center;
-			color: #fff;
+			color: #ffffff;
 			@media (max-width: 800px) {
 				font-size: $fnt-sz-title-md;
-				@media (max-width: 800px) {
-					font-size: $fnt-sz-title-sx;
-				}
+			}
+			@media (max-width: 767px) {
+				font-size: $fnt-sz-title-sx;
 			}
 		}
 	}
@@ -674,9 +673,9 @@ section.pricing {
 						text-align: center;
 						@media (max-width: 800px) {
 							font-size: $fnt-sz-title-md;
-							@media (max-width: 800px) {
-								font-size: $fnt-sz-title-sx;
-							}
+						}
+						@media (max-width: 767px) {
+							font-size: $fnt-sz-title-sx;
 						}
 					}
 				}
@@ -692,9 +691,9 @@ section.pricing {
 						text-align: center;
 						@media (max-width: 800px) {
 							font-size: $fnt-sz-p-md;
-							@media (max-width: 800px) {
-								font-size: $fnt-sz-p-xs;
-							}
+						}
+						@media (max-width: 767px) {
+							font-size: $fnt-sz-p-xs;
 						}
 					}
 				}
@@ -703,14 +702,14 @@ section.pricing {
 					justify-content: center;
 					margin-bottom: 5px;
 					span {
-						color: #fff;
+						color: #ffffff;
 						font-size: 32px;
 						line-height: 1;
 						@media (max-width: 800px) {
 							font-size: $fnt-sz-title-md;
-							@media (max-width: 800px) {
-								font-size: $fnt-sz-title-sx;
-							}
+						}
+						@media (max-width: 767px) {
+							font-size: $fnt-sz-title-sx;
 						}
 					}
 				}
@@ -727,9 +726,9 @@ section.pricing {
 						color: #fff;
 						@media (max-width: 800px) {
 							font-size: $fnt-sz-title-md;
-							@media (max-width: 800px) {
-								font-size: $fnt-sz-title-sx;
-							}
+						}
+						@media (max-width: 767px) {
+							font-size: $fnt-sz-title-sx;
 						}
 					}
 				}
@@ -747,9 +746,9 @@ section.pricing {
 						@media (max-width: 800px) {
 							font-size: $fnt-sz-p-md;
 							margin-bottom: 10px;
-							@media (max-width: 800px) {
-								font-size: $fnt-sz-p-xs;
-							}
+						}
+						@media (max-width: 767px) {
+							font-size: $fnt-sz-p-xs;
 						}
 					}
 				}
@@ -772,12 +771,12 @@ section.connection {
 			font-size: 36px;
 			@media (max-width: 800px) {
 				font-size: $fnt-sz-title-md;
-				@media (max-width: 414px) {
-					margin-bottom: 40px;
-					@media (max-width: 320px) {
-						font-size: $fnt-sz-title-sx;
-					}
-				}
+			}
+			@media (max-width: 414px) {
+				margin-bottom: 40px;
+			}
+			@media (max-width: 320px) {
+				font-size: $fnt-sz-title-sx;
 			}
 		}
 	}
@@ -820,12 +819,12 @@ section.connection {
 						font-size: 22px;
 						@media (max-width: 800px) {
 							font-size: $fnt-sz-p-md;
-							@media (max-width: 414px) {
-								font-size: 20px;
-								@media (max-width: 320px) {
-									font-size: 16px;
-								}
-							}
+						}
+						@media (max-width: 414px) {
+							font-size: 20px;
+						}
+						@media (max-width: 320px) {
+							font-size: 16px;
 						}
 					}
 				}
@@ -837,9 +836,9 @@ section.connection {
 			text-align: center;
 			@media (max-width: 800px) {
 				font-size: 20px;
-				@media (max-width: 414px) {
-					font-size: 12px;
-				}
+			}
+			@media (max-width: 414px) {
+				font-size: 12px;
 			}
 		}
 	}

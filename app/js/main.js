@@ -126,7 +126,7 @@ $(".js-carousel").owlCarousel({
 	startPosition: startItem,
 	responsive: {
 		0: {
-			dotsEach: 1,
+			dotsEach: 0,
 			items: 1
 		},
 		600: {
@@ -134,7 +134,7 @@ $(".js-carousel").owlCarousel({
 			items: 1
 		},
 		1200: {
-			dotsEach: 3,
+			dotsEach: 0,
 			items: 1
 		}
 	}
