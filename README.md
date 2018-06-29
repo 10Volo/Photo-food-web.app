@@ -27,7 +27,7 @@
             [DONE]  mobile v. 320 (iPhone 4);
 
         Install:
-            [DONE]  Node.js;
+            [DONE]  npm;
                 [DONE]  gulp;
                     [DONE]  gulp-sass;
                     [DONE]  browser-sync;
